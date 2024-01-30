@@ -1,1 +1,22 @@
 
+name: mon premier workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  job_ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Bonjour
+        run: echo "Bonjour"
+      - name: Comment ça va?
+        run: echo "comment ça va?"
+
+  job_macos:
+    runs-on: macos-latest
+    steps:
+      - name: Bien, merci.
+        run: echo "Bien, merci."
